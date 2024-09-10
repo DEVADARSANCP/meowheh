@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+       
+        <title>Virtual Garden</title>
+        <style>
+            
+            .header {
+                background-color: #f9f9f9;
+                padding: 10px;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                border-bottom: 1px solid #ddd;
+            }
+
+            .logo {
+                font-size: 24px;
+                font-weight: bold;
+            }
+
+            .search_bar {
+                width: 500px;
+                padding: 10px;
+                border-radius: 4px;
+                border: 1px solid #ccc;
+            }
+
+            .navigation {
+                display: flex;
+                gap: 15px;
+            }
+
+            .nav-link {
+                text-decoration: none;
+                color: #333;
+                font-weight: 500;
+            }
+
+            .grid-container {
+                display: grid;
+                grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+                gap: 15px;
+                padding: 15px;
+            }
+
+            .plant-preview {
+                background: #fff;
+                border: 1px solid #ddd;
+                border-radius: 8px;
+                overflow: hidden;
+                box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            }
+
+            .plant-image {
+                width: 100%;
+                height: auto;
+            }
+
+            .plant-info {
+                padding: 10px;
+            }
+
+            .plant-name {
+                font-size: 18px;
+                font-weight: bold;
+                margin-bottom: 8px;
+            }
+
+            .extra-info {
+                font-size: 14px;
+                color: #555;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="header">
+            <div class="logo">Virtual Garden</div>
+            <input class="search_bar" type="text" placeholder="Search">
+            <nav class="navigation">
+                <a href="#" class="nav-link">Home</a>
+                <a href="#" class="nav-link">Categories</a>
+                <a href="#" class="nav-link">About</a>
+            </nav>
+        </div>
+
+        <div class="grid-container">
+            <div class="plant-preview">
+                <img class="plant-image" src="plants/alovera.jpg" alt="Aloe Vera">
+                <div class="plant-info">
+                    <p class="plant-name">Aloe Vera</p>
+                    <p class="extra-info">Ideal for indoor environments. Known for its soothing gel.</p>
+                </div>
+            </div>
+<!-- copy div from here -->
+            <div class="plant-preview">
+                <img class="plant-image" src="plants/snake.jpg" alt="Snake Plant">
+                <div class="plant-info">
+                    <p class="plant-name">Snake Plant</p>
+                    <p class="extra-info">Great for purifying air. Very low maintenance.</p>
+                </div>
+
+                <!-- till this 96 to 101 then change the image title and extr info of the new plant then repeat --> 
+            </div>
+        </div>
+    </body>
+</html>
